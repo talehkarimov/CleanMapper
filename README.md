@@ -17,75 +17,13 @@
 
 ---
 
-## 🚀 Installation
+## 📚 Documentation
 
-Install via NuGet:
-
-```bash
-dotnet add package CleanMapper
-```
-
-Or via the Package Manager:
-
-```powershell
-Install-Package CleanMapper
-```
-
----
-
-## 💻 Usage
-
-### ➡️ 1. Create a Profile
-
-Define a mapping profile to configure your mappings:
-
-```csharp
-using CleanMapper.Core;
-
-public class UserProfile : MapProfile
-{
-    public override void Configure(MappingConfiguration config)
-    {
-        config.CreateMap<UserDto, User>();
-        config.CreateMap<User, UserDto>();
-    }
-}
-```
-
----
-
-### ➡️ 2. Map objects
-
-```csharp
-var mapper = new Mapper(new UserProfile());
-
-var dto = new UserDto { Id = 1, Name = "Taleh" };
-var user = mapper.Map<UserDto, User>(dto);
-```
-
----
-
-### ➡️ 3. Map lists
-
-```csharp
-using CleanMapper.Extensions; // ⚠️ Required for extension methods
-
-var userDtos = new List<UserDto>
-{
-    new UserDto { Id = 1, Name = "Alice" },
-    new UserDto { Id = 2, Name = "Bob" }
-};
-
-var users = mapper.MapList<UserDto, User>(userDtos).ToList();
-```
-
-> 💡 **Note:** To use `MapList`, `MapArray`, and other collection mapping extensions, ensure you add:
-> 
-> ```csharp
-> using CleanMapper.Extensions;
-> ```
-> 
-> Or add it as a **global using** in your project for convenience.
+- [Getting Started](docs/GettingStarted.md)
+- [Profiles](docs/Profiles.md)
+- [Extensions](docs/Extensions.md)
+- [Advanced Usage](docs/AdvancedUsage.md)
+- [Roadmap](docs/Roadmap.md)
 
 ---
 
