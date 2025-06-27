@@ -1,7 +1,7 @@
 [![NuGet Version](https://img.shields.io/nuget/v/CleanMapper.svg)](https://www.nuget.org/packages/CleanMapper/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
-# 🧹 CleanMapper
+# <img src="https://raw.githubusercontent.com/talehkarimov/CleanMapper/master/src/CleanMapper/icon.png" width="40" /> CleanMapper
 
 **CleanMapper** is a lightweight, reflection-minimal object mapping library for .NET. It enables fast, strongly-typed mappings between DTOs, ViewModels, and domain models with a clean and minimal API design.
 
