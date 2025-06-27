@@ -3,9 +3,6 @@
 
 # 🧹 CleanMapper
 
-
-# 🧹 CleanMapper
-
 **CleanMapper** is a lightweight, reflection-minimal object mapping library for .NET. It enables fast, strongly-typed mappings between DTOs, ViewModels, and domain models with a clean and minimal API design.
 
 ---
