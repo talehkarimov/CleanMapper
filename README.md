@@ -1,33 +1,44 @@
-# CleanMapper
+# 🧹 CleanMapper
 
-**CleanMapper** is a lightweight, reflection-minimal object mapping library for .NET. It provides AutoMapper-like functionality with a cleaner, faster, and minimalistic design.
+**CleanMapper** is a lightweight, reflection-minimal object mapping library for .NET. It enables fast, strongly-typed mappings between DTOs, ViewModels, and domain models with a clean and minimal API design.
 
-## ?? Features
+---
 
-- Strongly typed mapping registration
-- Auto-map properties with same name and type
-- Profile-based configuration
-- Map collections with extension methods
-- Lightweight with no runtime reflection during mapping
+## ✨ Features
 
-## ? Installation
+- ✅ Strongly-typed mapping registration
+- ✅ Auto-maps properties with matching names and types
+- ✅ Profile-based configuration for organized mappings
+- ✅ Extension methods for mapping collections and advanced scenarios
+- ✅ Lightweight with no runtime reflection during mapping
+
+---
+
+## 🚀 Installation
+
+Install via NuGet:
 
 ```bash
 dotnet add package CleanMapper
 ```
 
-## ? Usage
+Or via the Package Manager:
 
-```csharp
-var mapper = new Mapper(new UserProfile());
-
-var dto = new UserDto { Id = 1, Name = "Taleh" };
-var user = mapper.Map<UserDto, User>(dto);
+```powershell
+Install-Package CleanMapper
 ```
 
-### **Create a Profile**
+---
+
+## 💻 Usage
+
+### ➡️ 1. Create a Profile
+
+Define a mapping profile to configure your mappings:
 
 ```csharp
+using CleanMapper.Core;
+
 public class UserProfile : MapProfile
 {
     public override void Configure(MappingConfiguration config)
@@ -38,23 +49,49 @@ public class UserProfile : MapProfile
 }
 ```
 
-### **Map List**
+---
+
+### ➡️ 2. Map objects
 
 ```csharp
-var users = mapper.MapList<UserDto, User>(userDtos);
+var mapper = new Mapper(new UserProfile());
+
+var dto = new UserDto { Id = 1, Name = "Taleh" };
+var user = mapper.Map<UserDto, User>(dto);
 ```
-
-## ? Roadmap
-
-- Custom value resolvers
-- Conditional mapping
-- Reverse mapping via fluent API
-- Nested and flattening mappings
-
-## ?? License
-
-MIT
 
 ---
 
-**Built with ?? by Taleh Karimov**
+### ➡️ 3. Map lists
+
+```csharp
+var userDtos = new List<UserDto>
+{
+    new UserDto { Id = 1, Name = "Alice" },
+    new UserDto { Id = 2, Name = "Bob" }
+};
+
+var users = mapper.MapList<UserDto, User>(userDtos).ToList();
+```
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Please open an issue to discuss improvements or submit a pull request directly.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See [LICENSE.txt](LICENSE.txt) for details.
+
+---
+
+### 🙌 Author
+
+**CleanMapper** is built with dedication by [Taleh Karimov](https://github.com/talehkarimov).
+
+---
+
+⭐ **Star this repository** if you find it helpful, and follow for upcoming advanced mapping features!
