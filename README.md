@@ -65,6 +65,8 @@ var user = mapper.Map<UserDto, User>(dto);
 ### ➡️ 3. Map lists
 
 ```csharp
+using CleanMapper.Extensions; // ⚠️ Required for extension methods
+
 var userDtos = new List<UserDto>
 {
     new UserDto { Id = 1, Name = "Alice" },
@@ -74,6 +76,15 @@ var userDtos = new List<UserDto>
 var users = mapper.MapList<UserDto, User>(userDtos).ToList();
 ```
 
+> 💡 **Note:** To use `MapList`, `MapArray`, and other collection mapping extensions, ensure you add:
+> 
+> ```csharp
+> using CleanMapper.Extensions;
+> ```
+> 
+> Or add it as a **global using** in your project for convenience.
+
+---
 
 ## 🤝 Contributing
 
