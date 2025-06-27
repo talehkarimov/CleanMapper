@@ -1,5 +1,6 @@
 [![NuGet Version](https://img.shields.io/nuget/v/CleanMapper.svg)](https://www.nuget.org/packages/CleanMapper/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
+[![Docs](https://img.shields.io/badge/docs-getting%20started-blue)](docs/GettingStarted.md)
 
 # 🧹 CleanMapper
 
