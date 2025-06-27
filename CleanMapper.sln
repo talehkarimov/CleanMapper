@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7F964CD5-1275-493C-A6DC-7B6A67489EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMapper", "src\CleanMapper\CleanMapper.csproj", "{96641C12-2CDC-4CE2-8732-B1984549F6DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMapper.Tests", "src\CleanMapper.Tests\CleanMapper.Tests.csproj", "{19541FD2-9A1F-47CE-B00F-238C1C2591B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96641C12-2CDC-4CE2-8732-B1984549F6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96641C12-2CDC-4CE2-8732-B1984549F6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96641C12-2CDC-4CE2-8732-B1984549F6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96641C12-2CDC-4CE2-8732-B1984549F6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19541FD2-9A1F-47CE-B00F-238C1C2591B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19541FD2-9A1F-47CE-B00F-238C1C2591B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19541FD2-9A1F-47CE-B00F-238C1C2591B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19541FD2-9A1F-47CE-B00F-238C1C2591B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96641C12-2CDC-4CE2-8732-B1984549F6DD} = {7F964CD5-1275-493C-A6DC-7B6A67489EFA}
+		{19541FD2-9A1F-47CE-B00F-238C1C2591B3} = {7F964CD5-1275-493C-A6DC-7B6A67489EFA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E95A990B-818E-4FC1-A7F9-0A656EE2002E}
+	EndGlobalSection
+EndGlobal
